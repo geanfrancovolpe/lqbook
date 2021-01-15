@@ -54,8 +54,42 @@
 }
 
 .lq-content-four {
+    padding:10% 0;
 
     .content {
         max-width: 100%;
+
+        h1 {
+            margin:0;
+            padding:10px 0;
+        }
+        
+        .amazon {
+            margin:20px 0;
+            color:black;
+            opacity:1;
+            transition: all .4s ease;
+            letter-spacing: .5px;
+
+            &:hover{
+                letter-spacing: 2px;
+                text-decoration: none!important;
+                transition: all .4s ease;
+                opacity:.7;
+                color: black;
+            }
+        }
     }
+
+    .right {
+        .book {
+            img {
+                width:100%;
+            }
+        }
+    }
+}
+
+.lq-content-five {
+    
 }

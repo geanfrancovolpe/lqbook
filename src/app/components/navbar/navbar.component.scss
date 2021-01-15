@@ -19,12 +19,14 @@
             font-weight: 500;
             cursor:pointer;
             opacity:1;
-            transition: .6s ease;
+            transition:all .6s ease;
             font-size: 10pt;
+            letter-spacing: .5px;
 
             &:hover{
-                transition:opacity .6s ease;
+                transition:all .6s ease;
                 opacity:.5;
+                letter-spacing: 2px;
             }
         }
     }

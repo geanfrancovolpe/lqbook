@@ -1,5 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Canela-Regular';
+    src: url('/assets/Fonts/Canela-Regular.otf') format('opentype');
+}
 
+@font-face {
+    font-family: 'Canela-Thin';
+    src: url('/assets/Fonts/Canela-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: url('/assets/Fonts/NeueMontreal-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('/assets/Fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+.canela-r {
+    font-family: 'Canela-Regular', serif!important;
+    // font-weight: bold;
+}
+
+.canela-t {
+    font-family: 'Canela-Thin', serif!important;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Raleway-Regular', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Canela-Regular', serif!important;
+}
+
+p {
+    font-family: 'Canela-Thin', serif!important;
+}
 
 h1 {
     font-size: 38pt!important;
@@ -8,4 +48,47 @@ h1 {
 p {
     font-size: 17.5pt;
     font-weight: 400;
+}
+
+.row {  
+    padding:0!important;
+    margin:0!important;
+}
+
+.lq-btn {
+    padding: 20px 15px 20px 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    margin: 15px 0;
+    text-transform: uppercase;
+    position: relative;
+    width: 170px;
+    font-size: 9pt;
+    opacity:1;
+    transition: all .4s ease;
+    text-decoration: none!important;
+
+    &:hover {
+        opacity:.8;
+        color: white;
+        background-color:black;
+        transition: all .4s ease;
+
+        &:after {
+            transition: right .4s ease;
+            right:15%;
+        }
+    }
+    
+    &:after {
+        transition: right .4s ease;
+        content: "";
+        background: url("/assets/homepage/arrow-right.svg");
+        width: 15px;
+        height: 10px;
+        position: absolute;
+        right:20%;
+        top:44%;
+    }
 }
