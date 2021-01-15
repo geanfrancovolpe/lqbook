@@ -1,0 +1,61 @@
+.lq-main-banner{
+    background-image: url('/assets/homepage/main-banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;    
+    
+
+    .lq-main-banner-content {
+        min-height: 100vh;
+
+        p {
+            max-width: 300px;
+        }
+    }
+}
+
+.lq-content-two, .lq-content-four  {
+    background-color: #e6e1e0;
+    padding-bottom:15%; 
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+
+        h1 {
+            padding:4rem 0;
+        }
+
+        .lq-parraph{
+            h4 {
+                padding:50px 0;
+                font-size:16pt;
+            }
+        
+            p {
+                color:#606060;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+.lq-content-three {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/homepage/section-three-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lq-content-four {
+
+    .content {
+        max-width: 100%;
+    }
+}
