@@ -1,0 +1,39 @@
+footer {
+    background-color: #e6e1e0;
+    padding:5% 0;
+
+    .lq-footer-list {
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        font-size: 14px;
+        margin-left: 30px;
+
+        li {
+            margin:20px 0 10px 0;
+            font-weight: bold;
+            font-family: "NeueMontreal-Regular", sans-serif !important;
+
+            a {
+                color:#333;
+            }
+        }
+
+        .lq-footer-sublist {
+            list-style-type: none;
+            padding:0 0 0 15px;
+            margin:0;
+            font-size: 10pt;
+        }
+    }
+
+    .lq-copyright {
+        position: absolute;
+        bottom: 15px;
+        left: 40px;
+    }
+
+    .border-right {
+        border-right: 1px solid #333!important;
+    }
+}

@@ -1,3 +1,15 @@
+
+/*
+    Bootstrap 4 Modifications
+*/
+
+@media (min-width: 1200px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1225px!important;
+    }
+}
+
+
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Canela-Regular';
@@ -33,7 +45,7 @@ body {
     font-family: 'Raleway-Regular', sans-serif;
 }
 
-h1,h2,h3{
+h1,h2,h3, span{
     font-family: 'Canela-Regular', serif!important;
 }
 
@@ -43,6 +55,10 @@ p {
 
 h1 {
     font-size: 38pt!important;
+}
+
+img {
+    width:100%;
 }
 
 p {
@@ -92,3 +108,19 @@ p {
         top:44%;
     }
 }
+
+.lq-border-right {
+    border-right: 1px solid black;
+}
+
+.lq-border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.fade-in {
+    position: relative;
+    opacity:0;
+    bottom: -100px;
+}
+
+
