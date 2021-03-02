@@ -8,10 +8,8 @@
     ul {
         margin:0;
         padding:5px 35px;
-        width:100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // width:100%;
+        display: inline-block;
         list-style-type: none;
 
         li {
@@ -22,6 +20,7 @@
             transition:all .6s ease;
             font-size: 10pt;
             letter-spacing: .5px;
+            margin:0 20px;
 
             a {
               color:#333;
@@ -35,6 +34,17 @@
             }
         }
     }
+}
+
+.lang {
+  top:15px;
+  right:35px;
+  display: block;
+  font-size: 10pt;
+  position: relative;
+  float: right;
+  width: auto;
+  height:100%;
 }
 
 

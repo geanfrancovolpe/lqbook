@@ -1,32 +1,23 @@
 <div class="lq-navbar">
     <ul>
-        <li data-scroll-to="main">
-            <a href="">
+        <li>
+            <a [routerLink]="['home']" routerLinkActive="active">
                 <img src="/assets/navbar/logo.png" class="logo" alt="LQlogo">
             </a>
         </li>
-        <li data-scroll-to="book">
-            <a href="">Book</a>
-        </li>
-        <li data-scroll-to="authors">
-            <a href="">Authors</a>
-        </li>
-        <li data-scroll-to="coaching">
-            <a>Coaching</a>
-        </li>
-        <li data-scroll-to="blog">
-            <a>Blog</a>
-        </li>
-        <li data-scroll-to="contact">
-            <a>Contact</a>
+        <li>
+            <a [routerLink]="['book']" routerLinkActive="active">Book</a>
         </li>
         <li>
-            <a href="#" style="color:#333;">ESP</a> 
-            <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
-            </label>
-            <a href="#" style="color:#333;">ENG</a> 
+            <a [routerLink]="['authors']" routerLinkActive="active" >Coaching</a>
         </li>
     </ul>
+    <div class="lang">
+        <a href="#" style="color:#333;">ESP</a> 
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+        <a href="#" style="color:#333;">ENG</a> 
+    </div>
 </div>

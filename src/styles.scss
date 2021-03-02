@@ -41,6 +41,10 @@
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway-Regular', sans-serif;
 }
@@ -106,6 +110,30 @@ p {
         position: absolute;
         right:20%;
         top:44%;
+    }
+}
+
+.lq-inverse-btn {
+    background-color: #333333;
+    color: white;
+    text-transform: uppercase;
+    padding: 25px 40px;
+    border-radius: 0;
+    margin: 20px 10px 20px 0;
+    display: inline-block;
+    position: relative;
+    transition: all .4s ease;
+
+    &:hover {
+        opacity:.8;
+        transition: all .4s ease;
+        text-decoration: none;
+        color:white;
+
+        &:after {
+            transition: right .4s ease;
+            right:15%;
+        }
     }
 }
 

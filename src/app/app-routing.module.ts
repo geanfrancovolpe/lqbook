@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthorsComponent } from './pages/authors/authors.component';
+import { BookComponent } from './pages/book/book.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
+  { path: 'book', component: BookComponent },
+  { path: 'authors', component: AuthorsComponent },
+  { path: '**', redirectTo: '/'}
 ];
 
 @NgModule({

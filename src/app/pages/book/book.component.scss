@@ -1,0 +1,154 @@
+.book-section {
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        max-width:1280px;
+        width:100%;
+        align-items: center;
+        flex-direction: column;
+
+        .product {
+            width:100%;
+            display: flex;
+    
+            .left, .right {
+                width:50%;
+    
+                img {
+                    width: 100%;
+                    height: 90%;
+                }
+            }
+
+            .left {
+                display: flex;
+                justify-content: center;
+            }
+
+            .right {
+
+                h1.product-title {
+                    font-size: 3.5rem;
+                    padding:0;
+                    margin:0;
+                }
+
+                .title {
+                    font-size: 3rem;
+                    padding: 0;
+                    margin: 0;
+                    max-width: 500px;
+                    display: block;
+                    line-height: 1;
+                    font-family: "Canela-Thin", sans-serif !important;
+                }
+
+                .version {
+                    font-family: 'NeueMontreal-Thin',sans-serif!important;
+                    font-size: 1.8rem;
+                    font-weight: 200;
+                }
+
+                .authors {
+                    font-size: 15pt;
+                    margin: 20px 0;
+                    font-family: 'NeueMontreal-Thin',sans-serif!important;
+                }
+
+                .buttons .lq-btn {
+                    display: inline-block;
+                    max-width: 200px;
+                    width: auto;
+                    text-align: center;
+                    padding: 10px 25px;
+                    margin: 0;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    margin-right:10px;
+                }
+
+                .chapters {
+                    font-size: 16pt;
+                    margin: 30px 0 10px 0;
+                    display: block;
+                    font-family: 'NeueMontreal-Regular',sans-serif!important;
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-family: 'NeueMontreal-Thin',sans-serif!important;
+                    font-weight: 200;
+                    margin-bottom: 0;
+                }
+
+                .read-more-btn {
+                    color:#333333;
+                    text-decoration: underline;
+                    text-transform: capitalize;
+                    display: block;
+                    position: relative;
+                    padding:10px 0;
+                }
+
+                .price {
+                    font-size: 3rem;
+                    font-family: 'NeueMontreal-Regular',sans-serif!important;
+                    letter-spacing: 8px;
+                }
+
+                .social {
+                    margin:0;
+                    padding:0;
+
+                    li {
+                        display: inline-block;
+                        width: 25px;
+                        margin:0 4px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+        .comments {
+            width:100%;
+
+            .heading h3{
+                font-family: "NeueMontreal-Regular", sans-serif !important;
+                text-transform: uppercase;
+                font-size: 18pt;
+                margin: 50px 0 25px 0;
+                font-weight: bold;
+            }
+
+            h4.author{
+                font-size: 16pt;
+                font-family: 'NeueMontreal-Thin',sans-serif!important;
+                border-bottom: 1px solid;
+                padding: 5px;
+                margin-top:30px;
+            }
+
+            p {
+                font-family: "NeueMontreal-Regular", sans-serif !important;
+                font-size: 14pt;
+                color: #909090;
+                padding: 0;
+                margin: 0;
+                display: inline;
+            }
+
+            p.address {
+                font-family: "NeueMontreal-Thin", sans-serif !important;
+                font-weight: 200;
+                color: #afafaf;
+                display: inline-block;
+            }
+        }
+    }
+}
