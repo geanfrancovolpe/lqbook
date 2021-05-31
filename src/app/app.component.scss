@@ -10,4 +10,49 @@
     border-radius: 50%;
     pointer-events: none;
     z-index:5;
+    transition: width .6s ease, height .6s ease;
+
+    p {
+      display: none;
+      position: relative;
+    }
+
+    .spinner-grow {
+      display: none!important;
+    }
+
+    &.hovering-home-video {
+      width: 200px;
+      height:200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: width .6s ease, height .6s ease;
+      cursor: none!important;
+
+      p {
+        display: block;
+        text-align: center;
+        padding:0;
+        margin:0;
+      }
+    }
+
+    &.loading {
+      .spinner-grow {
+        display: block!important;
+      }
+
+      &.hovering-home-video {
+        p {
+          display: none;
+        }
+      }
+    }
   }
+
+@media (max-width:992px){
+  .ball {
+    display: none!important;
+  }
+}

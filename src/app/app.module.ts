@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BookComponent } from './pages/book/book.component';
 import { AuthorsComponent } from './pages/authors/authors.component';
+import { PrivateAreaComponent } from './pages/private-area/private-area.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AuthorsComponent } from './pages/authors/authors.component';
     NavbarComponent,
     FooterComponent,
     BookComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    PrivateAreaComponent
   ],
   imports: [
     BrowserModule,

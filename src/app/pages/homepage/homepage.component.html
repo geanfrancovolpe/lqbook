@@ -1,6 +1,12 @@
 <div class="container-fluid lq-main-banner">
-    <video autoplay muted='1' loop id="video1" class="video1">
-        <source src="/assets/homepage/video1.mov">
+    <video 
+        muted="" 
+        autoplay="" 
+        loop=""
+        title="Advertisement"
+        class="video1" 
+        >
+        <source src="https://othilacreativa.com/videos/video1.mov">
         Your browser does not support HTML5 video.
     </video>
     <div class="row">
@@ -31,24 +37,70 @@
         </div>
     </div>
 </div> -->
-<div class="container-fluid lq-video-2 ">
-    <video autoplay muted='1' loop class="video2">
-        <source src="/assets/homepage/video2.mp4">
+<div class="container-fluid lq-video-2" (click)="changeSlide()" id="lq-video-2">
+    <video muted="muted" class="video2" id="video1" #video1>
+        <source src="/assets/homepage/cyan0000.mp4">
         Your browser does not support HTML5 video.
     </video>
     <div class="row">
         <div class="col-12">
             <div class="container">
                 <div class="col-lg-12 my-5">
-                    <div class="content">
+                    <div class="content slide-caption active">
                         <div class="lq-parraph fade-in">
-                            <h4>About</h4>
+                            <h4>{{ actualContent.header }}</h4>
                             <p>
-                                When we think about life balance, we think about work and family life; but you may have been ignoring your physical, spiritual, mental, emotional, and relaxation needs. Once you begin working on those forgotten areas, the ones you usually obsess over will improve almost by themselves. 
+                                {{ actualContent.parraph1 }}    
                             </p>
                             <p>
-                                Think of your life like a wheel; the more balanced it is, the better it will roll. 
+                                {{ actualContent.parraph2 }}  
                             </p>
+                        </div>
+                        <div class="life-essentials">
+                            <ul class="life-essentials-list">
+                                <li>
+                                    <div class="content">
+                                        <span>Family</span>
+                                        <span>{{ actualContent.life_essential[0] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Work</span>
+                                        <span>{{ actualContent.life_essential[1] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Physical</span>
+                                        <span>{{ actualContent.life_essential[2] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Spiritual</span>
+                                        <span>{{ actualContent.life_essential[3] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Mental</span>
+                                        <span>{{ actualContent.life_essential[4] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Emotional</span>
+                                        <span>{{ actualContent.life_essential[5] }}%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <span>Relaxation</span>
+                                        <span>{{ actualContent.life_essential[6] }}%</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -60,7 +112,7 @@
     <div class="row">
         <div class="col-lg d-flex">
             <!-- <h1>The LifeQ Quiz</h1> -->
-            <iframe class="typeform-widget" src="https://form.typeform.com/to/EUPEmQfo?typeform-medium=embed-snippet" style="width:800px; height: 500px;"></iframe> 
+            <!-- <iframe class="typeform-widget" src="https://form.typeform.com/to/EUPEmQfo?typeform-medium=embed-snippet" style="width:800px; height: 500px;"></iframe>  -->
         </div>
     </div>
 </div>

@@ -1,0 +1,39 @@
+.row {
+    margin:0;
+    padding:0;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    background-image: url('/assets/dashboard/background.jpg');
+    background-size: cover;
+}
+
+.excercises-content {
+    margin-top:50px;
+    border:1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px rgb(231, 231, 231);
+    padding:20px;
+    text-align: center;
+    max-width: 500px;
+
+    .chapter {
+        margin:15px 0;
+    }
+
+    .parraph {
+        margin:20px 0;
+    }
+
+    .typefrom-btn {
+        margin:50px 0;
+        
+        a {
+            position: relative;
+        }
+    }
+}
