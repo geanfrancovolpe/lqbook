@@ -86,8 +86,6 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
       
     };
 
-    
-
     this.video1.nativeElement.onplaying = (event:any) => {
         console.log('Video is no longer paused.');
         this.videoStarted = true;
@@ -160,7 +158,7 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
           this.actualIndex += 1;
 
       }else{
-        this.setBallText("Play");
+        this.setBallText("Click to play the experience");
         this.toggleBallLoader();
         this.actualIndex = 0;
         this.videoService.destroyVideo();
@@ -182,8 +180,13 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
   }
 
   setBallText(text:any, length?:any){
-    if(length)
+    if(length){
       text = text + '/' + length;
+      $('.ball').addClass("active");
+    }
+
+    if( text == "Click to play the experience")
+      $('.ball').removeClass("active");
     
     TweenLite.to('.ball p', .4, { opacity: 0, marginTop: "-50px", ease:Power4.easeInOut });
     $('.ball p').text(text);
@@ -191,6 +194,7 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
   }
 
   toggleBallLoader(){
+    $('.lq-video-2').toggleClass("loading");
     $('.ball').toggleClass("loading");
   }
 }
