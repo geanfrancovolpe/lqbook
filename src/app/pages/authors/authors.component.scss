@@ -4,6 +4,7 @@
     justify-content: center;
 
     .content {
+        padding:0 5%;
         max-width: 1280px;
         width: 100%;
         display: flex;
@@ -152,4 +153,39 @@
             }
         }
     }
+}
+
+@media (max-width:992px){
+    .authors .content {
+        .author{
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            .right {
+                width: 100%;
+                margin:50px 0 50px 0;
+            }
+    
+            .left {
+                width: 100%;
+    
+                .name {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .partners {
+            border-bottom: none;
+
+            .row {
+                img {
+                    width: 100%!important;
+                    padding:15%;
+                }
+            }
+        }
+    }
+
+    
 }

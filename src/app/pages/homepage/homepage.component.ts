@@ -17,27 +17,29 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
    */
   homeAnimation = new TimelineMax();
   controller:any;
+  animationStarted=false;
+  mobileHelpText:string;
 
   /**
    * LQ slider content
    */
   sliderContent = [
     {
-      "header": "About",
+      "header": "Introduction",
       "parraph1": "When we think about life balance, we think about work and family life; but you may have been ignoring your physical, spiritual, mental, emotional, and relaxation needs. Once you begin working on those forgotten areas, the ones you usually obsess over will improve almost by themselves.",
       "parraph2": "Think of your life like a wheel; the more balanced it is, the better it will roll.",
       "life_essential": [24.8,89.9,12.1,8.7,19.2,74,7.3]
     },
     {
-      "header": "About2",
-      "parraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dicta similique animi architecto qui sit, quidem impedit. Neque tempora deserunt assumenda facere cum fugit distinctio in fugiat, beatae aliquam. Quidem!",
-      "parraph2":"",
+      "header": "What we usually do",
+      "parraph1": "People try to convince themselves that once they have their career or family life under control, they can then make time for health, spirituality, personal growth, and soon. They feel this way until they experience a significant event in their life that wakes them up.",
+      "parraph2":"This trigger could be a health crisis, a job loss, the death of a close friend, or simply feeling that their life is empty of meaning.",
       "life_essential": [24.8,89.9,12.1,8.7,19.2,74,7.3]
     },
     {
-      "header": "About3",
-      "parraph1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dicta similique animi architecto qui sit, quidem impedit. Neque tempora deserunt assumenda facere cum fugit distinctio in fugiat, beatae aliquam. Quidem!",
-      "parraph2":"",
+      "header": "What we should be doing",
+      "parraph1": "But once we decide to give enough attention to all aspects of our lives, we become all-around better and we’ll notice everything falling into place smoothly.",
+      "parraph2":"Our integral well-being will be specially noticeable in the areas we care most about.",
       "life_essential": [24.8,89.9,12.1,8.7,19.2,74,7.3]
     }
   ]
@@ -181,12 +183,18 @@ export class HomepageComponent implements OnInit, AfterContentInit, AfterViewIni
 
   setBallText(text:any, length?:any){
     if(length){
+      this.animationStarted = true;
       text = text + '/' + length;
+      this.mobileHelpText = `${text} - Tap for next slide`;
+      
       $('.ball').addClass("active");
     }
 
-    if( text == "Click to play the experience")
+    if( text == "Click to play the experience"){
+      this.animationStarted = false;
       $('.ball').removeClass("active");
+    }
+      
     
     TweenLite.to('.ball p', .4, { opacity: 0, marginTop: "-50px", ease:Power4.easeInOut });
     $('.ball p').text(text);

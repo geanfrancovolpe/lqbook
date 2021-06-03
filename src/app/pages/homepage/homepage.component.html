@@ -41,6 +41,9 @@
     <div class="spinner-grow" role="status">
         <span class="sr-only">Loading...</span>
     </div>
+    <div class="mobile-text d-flex d-lg-none" *ngIf="!animationStarted">
+        <p class="canela-r">Tap to play the experience</p>
+    </div>
     <video muted="muted" class="video2" id="video1" #video1>
         <source src="/assets/homepage/cyan0000.mp4">
         Your browser does not support HTML5 video.
@@ -58,6 +61,9 @@
                             <p>
                                 {{ actualContent.parraph2 }}  
                             </p>
+                            <span class="mobile-help-text d-flex d-lg-none">
+                                {{ mobileHelpText }}
+                            </span>
                         </div>
                         <!-- <div class="life-essentials">
                             <ul class="life-essentials-list">
@@ -113,9 +119,11 @@
 </div>
 <div class="container-fluid lq-content-three">
     <div class="row">
-        <div class="col-lg d-flex">
-            <!-- <h1>The LifeQ Quiz</h1> -->
+        <div class="col-lg d-flex flex-column align-items-center fade-in">
+            <h1>The LifeQ Quiz</h1>
+            <a href="" class="lq-btn text-center" style="padding: 20px 15px 20px 15px;">Rellena el formulario</a>
             <!-- <iframe class="typeform-widget" src="https://form.typeform.com/to/EUPEmQfo?typeform-medium=embed-snippet" style="width:800px; height: 500px;"></iframe>  -->
+            
         </div>
     </div>
 </div>

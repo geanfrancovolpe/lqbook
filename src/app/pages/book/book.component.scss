@@ -152,3 +152,30 @@
         }
     }
 }
+
+@media (max-width:992px){
+
+    .book-section {
+        .content {
+            .product {
+                padding: 0 5%;
+                flex-direction: column;
+                align-items: center;
+        
+                .left, .right {
+                    width: 100%!important;
+                }
+
+                .right .title {
+                    max-width: 100%;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .comments {
+            padding: 20px 10%;
+        }
+    }
+    
+}

@@ -228,6 +228,45 @@
     }
 }
 
+.mobile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+@media (max-width:992px){
+    .lq-content-five {
+        padding:50px 5%;
+        background-color: #ededed;
+        text-align: center;
+    
+        .lq-authors-left-content {
+            max-width:100%;
+            border-right: none;
+
+            p {
+                padding:0;
+                margin:0;
+            }
+        }
+
+        .lq-author-card {
+            padding: 0;
+
+            .lq-author-card-image {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
 @media (max-width:400px){
     .lq-video-2 {
         .video2 {
@@ -235,10 +274,18 @@
             min-height: 100%;
         } 
 
-        .lq-parraph p {
-            font-size: 18px;
-            font-weight: bold;
+        .lq-parraph {
+            h4 {
+                padding: 10px 0;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
         }
     }
+
+    
 }
 
