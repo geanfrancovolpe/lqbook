@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-book',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent implements OnInit {
+  languageObject:any;
 
-  constructor() { }
+  constructor(
+    private _languageService: LanguageService
+  ) { 
+    this.getLanguage();
+  }
 
   ngOnInit(): void {
+  }
+
+  getLanguage(){
+    this._languageService.language$.subscribe( res => this.languageObject = res.languageObject);
   }
 
 }

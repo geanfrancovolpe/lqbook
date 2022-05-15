@@ -2,64 +2,45 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="container">
-                <div class="row">
+                <div class="row" *ngIf="languageObject">
                     <div class="col-lg-4 border-right">
                         <ul class="lq-footer-list">
                             <li>
-                                Want to get in touch with us?
+                                {{ languageObject.footer['first-column']['first-title'] }}
                                 <ul class="lq-footer-sublist">
                                     <li>
-                                        <a href="mailto:hello@lifeqbook.online">Say hello@lifeqbook.online</a>
+                                        <a href="mailto:{{ languageObject.footer['first-column']['contact-email-url']}}">
+                                            {{ languageObject.footer['first-column']['contact-email'] }}
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                Follow us
+                                {{ languageObject.footer['first-column']['second-title'] }}
                                 <ul class="lq-footer-sublist">
-                                    <!-- <li>
-                                        <a href="#" target="_blank">Twitter</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">Instagram</a>
-                                    </li> -->
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/jasenkatransformationcoach" target="_blank">
-                                            <b class="font-weight-bold" style="font-weight: bold;">LinkedIn</b>
+                                    <li *ngFor="let s of languageObject.footer['first-column']['social-links']">
+                                        <a href="{{ s.url }}" target="_blank">
+                                            <b class="font-weight-bold" style="font-weight: bold;">{{ s.name }}</b>
                                         </a>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#" target="_blank">Facebook</a>
-                                    </li> -->
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 border-right">
                         <ul class="lq-footer-list">
-                            <li>
-                                <a href="#">Book</a>
-                            </li>
-                            <li>
-                                <a href="#">Authors</a>
-                            </li>
-                            <li>
-                                <a href="#">Coaching</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
+                            <li *ngFor="let item of languageObject.footer['second-column']">
+                                <a [routerLink]="[item.url]">{{ item.title }}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
                         <ul class="lq-footer-list">
                             <li>
-                                Next Events
+                                {{languageObject.footer['third-column']['title']}}
                                 <ul class="lq-footer-sublist">
                                     <li>
-                                        Coming Soon
+                                        {{languageObject.footer['third-column']['content']}}
                                     </li>
                                 </ul>
                             </li>

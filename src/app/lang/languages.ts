@@ -83,9 +83,6 @@ export const LANGUAGES: { [ char: string ]: object } = {
                 "second-author-paragraph": "Dr. Susan Murphy's career combines the three worlds of corporate leadership, academia, and international management consulting. She has been an executive in two Fortune 500 Corporations and served on the graduate faculty at both the University of San Francisco and Vanderbilt University."
             }
         },
-        "authors": {
-    
-        },
         "coaching": {
             "title": "Get Clear on Where You Are So You Can Take Steps Towards Where You Want to Be",
             "content": 
@@ -145,6 +142,47 @@ export const LANGUAGES: { [ char: string ]: object } = {
                     "location": "Mylie Caldwell, Director of Asset"
                 }
             ]
+        },
+        "about": {
+            "content": 
+                `Jasenka is passionate about human development and people's success.
+
+                She believes that when people allow themselves to embrace authenticity and creativity into the journey of personal mastery, they become more effective, balanced and successful.
+                
+                Leaving a war-torn Bosnia, Jasenka learned to cope with trauma, victimhood in her early years. She experienced setbacks and tragedies that could have stopped her in her tracks, but she made it her life mission to discover the keys to happiness and success and then share them with the world.
+                
+                “It takes courage to look inside, but I did it. I allowed myself to be vulnerable and started to see where I was stuck, triggered and insecure. I saw where I needed to heal, so that I could become my best self. I took the time to get to know me and found what I love to do.”
+                
+                Her personal suffering has led to search for answers. And she found that the only way to transcend the trauma is to contribute and give back. Jasenka began her coaching career in 2004 and since then she is focused on deliverable outcomes and ensures that both individual clients and organizations get true value from their work together.
+                
+                Her supportive but challenging coaching style and goal oriented approach enables you to gain absolute clarity about your objectives, priorities and strategy enabling you to manage new challenges that face you.
+                
+                Jasenka is a multilingual coach (English, Spanish, Bosnian/Croatian/Serbian, German), she has lived and worked in different countries and continents for the past 30 years.
+                
+                Using an energetic, co-active style of coaching, she challenges her clients to understand precisely what they want to achieve, what they need from their lives and organizations and how to deliver success in complex and changing environments.
+                `,
+            "cta-text":"Contact Jasenka"
+        },
+        "footer": {
+            "first-column": {
+                "first-title":"Want to get in touch with us?",
+                "second-title": "Follow us",
+                "contact-email": "Say hello@lifeqbook.online",
+                "contact-email-url": "mailto:hello@lifeqbook.online",
+                "social-links": [
+                    {"name":"LinkedIn", "url":"https://www.linkedin.com/in/jasenkatransformationcoach"}
+                ]
+            },
+            "second-column": [
+                { "title": "Book", "url": "/book"},
+                { "title": "About", "url": "/about"},
+                { "title": "Coaching", "url": "/coaching"},
+                { "title": "Contact", "url": "/contact"}
+            ],
+            "third-column": {
+                "title":"Next Events",
+                "content": "Coming soon"
+            },
         }
     },
     "ES": {
@@ -228,9 +266,6 @@ export const LANGUAGES: { [ char: string ]: object } = {
                 "second-author-paragraph": "La carrera de la Dra. Susan Murphy combina los tres mundos del liderazgo empresarial, la academia y la consultoría de gestión internacional. Ha sido ejecutiva en dos corporaciones Fortune 500 y se desempeñó en la facultad de posgrado tanto en la Universidad de San Francisco como en la Universidad de Vanderbilt."
             }
         },
-        "authors": {
-    
-        },
         "coaching": {
             "title": "Tenga claro dónde se encuentra para que pueda dar pasos hacia donde quiere estar",
             "content": 
@@ -257,40 +292,80 @@ export const LANGUAGES: { [ char: string ]: object } = {
         },
         "book": {
             "title": "LifeQ",
-            "subtitle": "How to make your life your most important business",
-            "translated-author": "Author",
-            "lang-button-text": "English",
-            "pages-text": "Pages",
-            "first-description-title": "LifeQ is for you if you want to achieve breakthrough, long-term results in your personal and professional life.",
-            "second-description-title": "What is special about LifeQ?",
-            "first-description-paragraph": "It could be that you want to examine your career path, or overhaul your financial plan, or find a new love, or create better relationships, or create a retirement strategy, or get get healthier, or develop a new talent or skill.",
-            "second-description-paragraph": "LifeQ is a system that measures the quality of your life based on what you think is important. It is like a GPS system that shows you where you are and then how to get where you want to be. It is based on your values, your purpose and how you see your destiny.",
-            "first-cta-text": "Buy e-book now",
-            "second-cta-text": "Buy hardcover on amazon",
-            "comments-title": "Comments",
+            "subtitle": "Como hacer de tu vida el negocio más importante",
+            "translated-author": "Autor",
+            "lang-button-text": "Inglés",
+            "pages-text": "Páginas",
+            "first-description-title": "LifeQ es para usted si desea lograr resultados innovadores a largo plazo en su vida personal y profesional.",
+            "second-description-title": "¿Qué hace especial a LifeQ?",
+            "first-description-paragraph": "Podría ser que desee examinar su trayectoria profesional, revisar su plan financiero, encontrar un nuevo amor, crear mejores relaciones, crear una estrategia de jubilación, mejorar su salud o desarrollar un nuevo talento o habilidad.",
+            "second-description-paragraph": "LifeQ es un sistema que mide la calidad de tu vida en función de lo que crees que es importante. Es como un sistema de GPS que te muestra dónde estás y luego cómo llegar a donde quieres estar. Se basa en tus valores, tu propósito y cómo ves tu destino.",
+            "first-cta-text": "Comprar LifeQ",
+            "second-cta-text": "Obtén el libro en físico",
+            "comments-title": "Comentarios",
             "comments": [
                 { 
                     "name": "Lena Sosa",
-                    "comment": "I really had no idea what I was aiming for, except finding a new path for myself, and Jasenka helped me steer myself towards just that. If you're willing to put in the work for what you want to accomplish, she can get you there.",
-                    "location": "Lena Sosa, Head of Corporate Communications, Palo Alto, CA."
+                    "comment": "Realmente no tenía idea de a qué me dirigía, excepto encontrar un nuevo camino para mí, y Jasenka me ayudó a orientarme hacia eso. Si estás dispuesto a esforzarte por lo que quieres lograr, ella puede llevarte allí.",
+                    "location": "Lena Sosa, Head de Corporate Communications, Palo Alto, CA."
                 },
                 { 
                     "name": "Joseph Pace",
-                    "comment": "I've been working with Jasenka for several years now and and I know wouldn't be where I am today without her help and guidance. We have worked on all aspects, from building my business to building healthy relationships. My communication skills have improved tremen- dously as well as my self-worth.",
+                    "comment": "He estado trabajando con Jasenka durante varios años y sé que no estaría donde estoy hoy sin su ayuda y orientación. Hemos trabajado en todos los aspectos, desde construir mi negocio hasta construir relaciones saludables. Mis habilidades de comunicación han mejorado enormemente, así como mi autoestima.",
                     "location": "Joseph Pace, Business Owner, Father of Three, San Francisco, CA."
                 },
                 { 
                     "name": "Jenna Moyer",
-                    "comment": "With Jasenka and Susan's help, I have been able to advocate for my self-worth, gain a work-life balance, and figure out a self-fulfilling career that matches my core values. More importantly, I gained self-confidence. Every day I wake up grateful in every aspect of my life.",
+                    "comment": "Con la ayuda de Jasenka y Susan, he podido abogar por mi autoestima, lograr un equilibrio entre el trabajo y la vida personal y descubrir una carrera que me satisfaga y que coincida con mis valores fundamentales. Más importante aún, gané confianza en mí mismo. Todos los días me levanto agradecida en todos los aspectos de mi vida.",
                     "location": "Jenna Moyer, Fundraising Professional, Los Angeles, CA"
                 },
                 { 
                     "name": "Mylie Caldwell",
-                    "comment": "Working with Jasenka and Susan for 8 months was life changing. Going into my mid 40's I came seeking help in building the next chapter in my career. What I didn't expect is that I needed guidance in my personal life as well. Every session was therapeutic and eye opening, and I'm a better person today thanks to their dedication and willingness to push me forward.",
-                    "location": "Mylie Caldwell, Director of Asset"
+                    "comment": "Trabajar con Jasenka y Susan durante 8 meses fue un cambio de vida. A mediados de los 40, vine en busca de ayuda para construir el próximo capítulo de mi carrera. Lo que no esperaba es que también necesitaba orientación en mi vida personal. Cada sesión fue terapéutica y reveladora, y hoy soy una mejor persona gracias a su dedicación y voluntad de empujarme hacia adelante.",
+                    "location": "Mylie Caldwell, Director de Asset"
                 }
             ]
+        },
+        "about": {
+            "content": 
+                `Jasenka es una apasionada del desarrollo humano y el éxito de las personas.
+
+                Ella cree que cuando las personas se permiten abrazar la autenticidad y la creatividad en el viaje del dominio personal, se vuelven más efectivas, equilibradas y exitosas.
+                                
+                Dejando una Bosnia devastada por la guerra, Jasenka aprendió a lidiar con el trauma y el victimismo en sus primeros años. Experimentó contratiempos y tragedias que podrían haberla detenido en seco, pero su misión en la vida fue descubrir las claves de la felicidad y el éxito y luego compartirlas con el mundo.
+                                
+                “Se necesita coraje para mirar dentro, pero lo hice. Me permití ser vulnerable y comencé a ver dónde estaba atascado, desencadenado e inseguro. Vi dónde necesitaba sanar, para poder convertirme en mi mejor yo. Me tomé el tiempo para conocerme y encontré lo que amo hacer”.
+                                
+                Su sufrimiento personal la ha llevado a buscar respuestas. Y descubrió que la única forma de trascender el trauma es contribuir y retribuir. Jasenka comenzó su carrera como entrenadora en 2004 y desde entonces se enfoca en resultados entregables y se asegura de que tanto los clientes individuales como las organizaciones obtengan el verdadero valor de su trabajo en conjunto.
+                                
+                Su estilo de entrenamiento de apoyo pero desafiante y su enfoque orientado a objetivos le permiten obtener una claridad absoluta sobre sus objetivos, prioridades y estrategia, lo que le permite gestionar los nuevos desafíos que enfrenta.
+                                
+                Jasenka es una entrenadora multilingüe (inglés, español, bosnio/croata/serbio, alemán), ha vivido y trabajado en diferentes países y continentes durante los últimos 30 años.
+                                
+                Utilizando un estilo de coaching enérgico y coactivo, desafía a sus clientes a comprender con precisión lo que quieren lograr, lo que necesitan de sus vidas y organizaciones y cómo lograr el éxito en entornos complejos y cambiantes.
+                `,
+            "cta-text":"Contacta con Jasenka"
+        },
+        "footer": {
+            "first-column": {
+                "first-title":"Contáctame",
+                "second-title": "Sígueme",
+                "contact-email": "hello@lifeqbook.online",
+                "contact-email-url": "mailto:hello@lifeqbook.online",
+                "social-links": [
+                    {"name":"LinkedIn", "url":"https://www.linkedin.com/in/jasenkatransformationcoach"}
+                ]
+            },
+            "second-column": [
+                { "title": "Libro", "url": "/book"},
+                { "title": "Acerca de mí", "url": "/about"},
+                { "title": "Coaching", "url": "/coaching"},
+                { "title": "Contacto", "url": "/contact"}
+            ],
+            "third-column": {
+                "title":"Próximos eventos",
+                "content": "Coming soon"
+            }
         }
-    }
-    
+    } 
 }

@@ -7,40 +7,43 @@
             </div>
             <div class="right">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row" *ngIf="languageObject">
                         <div class="col-12">
                             <h1 class="product-title">
                                 
                             </h1>
                             <span class="title">
-                                <b></b> - How to make your life your most important business
+                                <b>{{ languageObject.book.title }}</b> - {{ languageObject.book.subtitle }}
                             </span>
                             <!-- <span class="version">(Inglés) Digital Version</span> -->
-                            <p class="authors"><b>Susan Murphy</b> (Author), <b>Jasenka Sabanovic</b> (Author).</p>
+                            <p class="authors"><b>Susan Murphy</b> ({{ languageObject.book["translated-author"] }}), <b>Jasenka Sabanovic</b> ({{ languageObject.book["translated-author"] }}).</p>
                             <div class="buttons">
-                                <!-- <a href="" class="lq-btn">Español</a> -->
-                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-btn">English</a>
+                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-btn">{{languageObject.book["lang-button-text"] }}</a>
                             </div>
                             <span class="chapters">
-                                317 pages
+                                317 {{languageObject.book["pages-text"]}}
                             </span>
                             <h4 class="mt-4 mb-2">
-                                LifeQ is for you if you want to achieve breakthrough, long-term results in your personal and professional life.
+                                {{ languageObject.book["first-description-title"] }}
                             </h4>
                             <p class="description">
-                                It could be that you want to examine your career path, or overhaul your financial plan, or find a new love, or create better relationships, or create a retirement strategy, or get get healthier, or develop a new talent or skill.
+                                {{ languageObject.book["first-description-paragraph"] }}
                             </p>
                             <h4 class="mt-4 mb-2">
-                                What is special about LifeQ?
+                                {{ languageObject.book["second-description-title"] }}
                             </h4>
                             <p class="description mb-4">
-                                LifeQ is a system that measures the quality of your life based on what you think is important. It is like a GPS system that shows you where you are and then how to get where you want to be. It is based on your values, your purpose and how you see your destiny.
+                                {{ languageObject.book["second-description-paragraph"] }}
                             </p>
                             <!-- <a href="" class="read-more-btn">Read More</a> -->
                             <span class="price">US$ 18.99</span>
                             <div class="buttons">
-                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-inverse-btn">Buy E-book Now</a>
-                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business/dp/1098337654/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" class="lq-inverse-btn">Buy Hardcover on Amazon</a>
+                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-inverse-btn">
+                                    {{ languageObject.book["first-cta-text"] }}
+                                </a>
+                                <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business/dp/1098337654/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" class="lq-inverse-btn">
+                                    {{ languageObject.book["second-cta-text"] }}
+                                </a>
                             </div>
                             <!-- <ul class="social">
                                 <li>
@@ -60,48 +63,15 @@
         </div>
         <div class="comments">
             <div class="heading">
-                <h3>Comentarios</h3>
+                <h3>{{ languageObject.book["comments-title"] }}</h3>
             </div>
-            <div class="comment">
-                <h4 class="author">Lena Sosa</h4>
+            <div class="comment" *ngFor="let c of languageObject.book['comments']">
+                <h4 class="author">{{ c.name}}</h4>
                 <p>
-                    “I really had no idea what I was aiming for, except finding a new path for myself, and Jasenka helped me steer myself towards just that. If
-                    you're willing to put in the work for what you want to accomplish, she can get you there."
+                    “{{ c.comment }}"
                 </p>
                 <p class="address">
-                    - Lena Sosa, Head of Corporate Communications, Palo Alto, CA.
-                </p>
-            </div>
-            <div class="comment">
-                <h4 class="author">Joseph Pace</h4>
-                <p>
-                    "I've been working with Jasenka for several years now and and I know wouldn't be where I am today without her help and guidance. We
-                    have worked on all aspects, from building my business to building healthy relationships. My communication skills have improved tremen-
-                    dously as well as my self-worth."
-                </p>
-                <p class="address">
-                    - Joseph Pace, Business Owner, Father of Three, San Francisco, CA.
-                </p>
-            </div>
-            <div class="comment">
-                <h4 class="author">Jenna Moyer</h4>
-                <p>
-                    "With Jasenka and Susan's help, I have been able to advocate for my self-worth, gain a work-life balance, and figure out a self-fulfilling
-                    career that matches my core values. More importantly, I gained self-confidence. Every day I wake up grateful in every aspect of my life."
-                </p>
-                <p class="address">
-                    - Jenna Moyer, Fundraising Professional, Los Angeles, CA
-                </p>
-            </div>
-            <div class="comment">
-                <h4 class="author">Mylie Caldwell</h4>
-                <p>
-                    “Working with Jasenka and Susan for 8 months was life changing. Going into my mid 40's I came seeking help in building the next
-                    chapter in my career. What I didn't expect is that I needed guidance in my personal life as well. Every session was therapeutic and eye
-                    opening, and I'm a better person today thanks to their dedication and willingness to push me forward."
-                </p>
-                <p class="address">
-                    - Mylie Caldwell, Director of Asset
+                    - {{ c.location }}
                 </p>
             </div>
         </div>

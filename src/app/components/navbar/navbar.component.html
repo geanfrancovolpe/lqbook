@@ -12,8 +12,22 @@
                 {{ item.title }}
             </a>
         </li>
+        <li class="d-inline-block d-lg-none d-xl-none">
+          <span class="navbar-text">
+            <div class="lang">
+                ESP
+                <label class="switch">
+                    <input type="checkbox" 
+                           (click)="changeLanguage()"
+                           [checked]="language == 'ENG'">
+                    <span class="slider round"></span>
+                </label>
+                ENG
+            </div>
+          </span>
+        </li>
       </ul>
-      <span class="navbar-text">
+      <span class="navbar-text d-none d-lg-inline-block">
         <div class="lang">
             <a style="color:#333;">ESP</a> 
             <label class="switch">
