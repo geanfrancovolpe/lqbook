@@ -7,13 +7,21 @@
     position: relative;
     overflow: hidden;
 
-    .video1{    
+    .video1, .main-background{    
         position: absolute;
         top: -24px;
         left: 0px;
         z-index: 0;
         min-height: 105vh;
         min-width: 100%;
+    }
+
+    .main-background {
+        filter: blur(4px);
+        img {
+            width: 150%;
+            height: 150%;
+        }
     }
     
 

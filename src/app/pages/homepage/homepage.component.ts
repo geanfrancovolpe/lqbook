@@ -23,6 +23,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
    * View child
    */
   @ViewChild('video1') video1: ElementRef;
+  // @ViewChild('mainVideo') mainVideo: ElementRef;
 
   /**
    * Constructor
@@ -107,7 +108,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
   setVideoBehaviour(){
     this.initImageObserver('.fade-in');
     this.videoManipulation();
-    VanillaTilt.init(document.querySelector(".book"), { max: 25, speed: 400 });
+    // VanillaTilt.init(document.querySelector(".book"), { max: 25, speed: 400 });
     this.video1.nativeElement.onloadeddata = (event:any) => {
       console.log('Video data is loaded.');
       this.dataLoaded = true;
