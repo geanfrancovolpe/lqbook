@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  language:any;
+  languageObject:any;
+
+  constructor( private _languageService: LanguageService ) { }
 
   ngOnInit(): void {
+    this.getLanguage();
+  }
+
+  getLanguage(){
+    this._languageService.language$
+      .subscribe( (res:any) => {
+        this.language = res.actualLanguage;
+        this.languageObject = res.languageObject;
+      });
+  }
+
+  changeLanguage(){
+    let nextLanguage:string;
+    this.language == 'ENG' ? nextLanguage = 'ES' : nextLanguage = 'ENG';
+    this._languageService.language = nextLanguage;
   }
 
 }

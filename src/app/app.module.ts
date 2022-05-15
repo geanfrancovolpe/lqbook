@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BookComponent } from './pages/book/book.component';
 import { AuthorsComponent } from './pages/authors/authors.component';
 import { PrivateAreaComponent } from './pages/private-area/private-area.component';
+import { CoachingComponent } from './pages/coaching/coaching.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PrivateAreaComponent } from './pages/private-area/private-area.componen
     FooterComponent,
     BookComponent,
     AuthorsComponent,
-    PrivateAreaComponent
+    PrivateAreaComponent,
+    CoachingComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

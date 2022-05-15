@@ -14,8 +14,10 @@
             <div class="container lq-main-banner-content d-flex align-items-center">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 d-flex flex-column justify-content-center fade-in">
-                        <h1 class="canela-r">Make life your most important business.</h1>
-                        <p class="canela-t">Companies create strategic plans so they can be successful. Our LifeQ Book uses the same process to create a business plan for your life.</p>
+                        <h1 class="canela-r">{{ languageObject.homepage.section1.title }}</h1>
+                        <p class="canela-t">
+                            {{ languageObject.homepage.section1.paragraph }}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -42,75 +44,39 @@
         <span class="sr-only">Loading...</span>
     </div>
     <div class="mobile-text d-flex d-lg-none" *ngIf="!animationStarted">
-        <p class="canela-r">Tap to play the experience</p>
+        <p class="canela-r" *ngIf="languageObject">{{ languageObject.homepage.section2["cursor-mobile-next-slide-text"]}}</p>
     </div>
     <video muted="muted" class="video2" id="video1" #video1>
         <source src="/assets/homepage/cyan0000.mp4">
         Your browser does not support HTML5 video.
     </video>
-    <div class="row">
+    <div class="row" *ngIf="languageObject && actualContent">
         <div class="col-12">
             <div class="container">
                 <div class="col-lg-12 my-5">
                     <div class="content slide-caption active">
                         <div class="lq-parraph fade-in">
-                            <h4>{{ actualContent.header }}</h4>
+                            <h4>{{ actualContent.title }}</h4>
                             <p>
-                                {{ actualContent.parraph1 }}    
+                                {{ actualContent.paragraph1 }}    
                             </p>
                             <p>
-                                {{ actualContent.parraph2 }}  
+                                {{ actualContent.paragraph2 }}  
                             </p>
                             <span class="mobile-help-text d-flex d-lg-none">
                                 {{ mobileHelpText }}
                             </span>
                         </div>
-                        <!-- <div class="life-essentials">
-                            <ul class="life-essentials-list">
-                                <li>
+                        <div class="life-essentials">
+                            <ul class="life-essentials-list" *ngIf="actualContent['life-essentials']">
+                                <li *ngFor="let l of actualContent['life-essentials']">
                                     <div class="content">
-                                        <span>Family</span>
-                                        <span>{{ actualContent.life_essential[0] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Work</span>
-                                        <span>{{ actualContent.life_essential[1] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Physical</span>
-                                        <span>{{ actualContent.life_essential[2] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Spiritual</span>
-                                        <span>{{ actualContent.life_essential[3] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Mental</span>
-                                        <span>{{ actualContent.life_essential[4] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Emotional</span>
-                                        <span>{{ actualContent.life_essential[5] }}%</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content">
-                                        <span>Relaxation</span>
-                                        <span>{{ actualContent.life_essential[6] }}%</span>
+                                        <span>{{ l.title }}</span>
+                                        <span>{{ l.value }}%</span>
                                     </div>
                                 </li>
                             </ul>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,10 +86,10 @@
 <div class="container-fluid lq-content-three">
     <div class="row">
         <div class="col-lg d-flex flex-column align-items-center fade-in">
-            <h1>The LifeQ Quiz</h1>
-            <a href="" class="lq-btn text-center" style="padding: 20px 15px 20px 15px;">Rellena el formulario</a>
+            <h1>{{ languageObject.homepage.section3["title"] }}</h1>
+            <a href="" class="lq-btn text-center" style="padding: 20px 15px 20px 15px;">{{languageObject.homepage.section3["cta-text"]}}</a>
             <!-- <iframe class="typeform-widget" src="https://form.typeform.com/to/EUPEmQfo?typeform-medium=embed-snippet" style="width:800px; height: 500px;"></iframe>  -->
-            
+            <p style="max-width: 550px;text-align: center;">{{languageObject.homepage.section3["paragraph"]}}</p>
         </div>
     </div>
 </div>
@@ -135,17 +101,21 @@
                     <div class="col-lg-7 my-5 left">
                         <div class="content fade-in">
                             <h1>
-                                Consider this book a DIY toolkit for living your life based on your values and purpose. 
+                                {{languageObject.homepage.section4["title"]}}
                             </h1>
             
                             <div class="lq-parraph">
                                 <p>
-                                    We wrote a book to share case studies from our clients, offer research and expert advice, provide practical exercises, and give examples of how we apply these business principles in our lives.
+                                    {{languageObject.homepage.section4["paragraph"]}}
                                 </p>
                             </div>
     
-                            <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="amazon">+ Available on Amazon</a>
-                            <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-btn">Shop now</a>
+                            <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="amazon">
+                                + {{languageObject.homepage.section4["amazon-text"]}}
+                            </a>
+                            <a href="https://www.amazon.com/LifeQ-Make-Your-Important-Business-ebook/dp/B08X4S7QZW" target="_blank" class="lq-btn">
+                                {{languageObject.homepage.section4["cta-text"]}}
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-5 right fade-in book-section">   
@@ -166,10 +136,10 @@
                     <div class="col-lg-4 fade-in">
                         <div class="lq-authors-left-content">
                             <h3>
-                                The authors
+                                {{languageObject.homepage.section5["title"]}}
                             </h3>
                             <p>
-                                Jasenka and Susan met over 10 years ago when working on project X and have been partners ever since. They wrote this book in order to summarize the best advice they could give to any client as coaches.
+                                {{languageObject.homepage.section5["paragraph"]}}
                             </p>
                         </div>
                     </div>
@@ -181,7 +151,7 @@
                             <span class="lq-author-card-name">
                                 Jasenka <br>Sabanovic
                             </span>
-                            <p class="lq-author-card-parraph">A Bosnian refugee who found her passion in leading people through love, now coaches teams and executives from Facebook, Disney, Amazon, Viacom, etc. </p>
+                            <p class="lq-author-card-parraph">{{languageObject.homepage.section5["first-author-paragraph"]}}</p>
                         </div>
                     </div>
                     <div class="col-lg-4 fade-in">
@@ -192,7 +162,7 @@
                             <span class="lq-author-card-name">
                                 Susan <br>Murphy
                             </span>
-                            <p class="lq-author-card-parraph">As an author, speaker and business consultant, Susan has an unmatched experience in living life to the fullest. She continues to work advising companies like NASA, while launching what is her 9th book.</p>
+                            <p class="lq-author-card-parraph">{{languageObject.homepage.section5["second-author-paragraph"]}} </p>
                         </div>
                     </div>
                 </div>
