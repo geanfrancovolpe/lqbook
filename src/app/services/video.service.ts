@@ -27,6 +27,18 @@ export class VideoService {
    */
   assignVideo( selector:any, breakpoints:any ){
     this.video = document.getElementById(selector);
+    
+    /**
+     * Restart video
+     */
+    this.video.pause();
+    this.video.currentTime = 0;
+
+    /**
+     * Video conf
+     */
+    this.video.defaultPlaybackRate = 2.0;
+    this.video.playbackRate = 2.0;
     this.totalIndex = breakpoints.length;
     this.breakpoints = breakpoints;
   }

@@ -1,21 +1,5 @@
 <div class="container-fluid lq-main-banner">
-    <!-- <video loop 
-           muted 
-           autoplay
-           preload="yes" 
-           playsinline
-           oncanplay="this.play()" 
-           onloadedmetadata="this.muted = true" 
-           class="main-video video1" 
-           type="video/mp4" 
-           id="mainVideo"
-           #mainVideo>
-        <source src="https://othilacreativa.com/videos/video1.mov">
-        Your browser does not support HTML5 video.
-    </video> -->
-    <div class="main-background">
-        <img src="assets/homepage/main-video.gif" class="main-background-gif">
-    </div>
+    <div class="main-background"></div>
     <div class="row">
         <div class="col-md-12">
             <div class="container lq-main-banner-content d-flex align-items-center">
@@ -53,7 +37,7 @@
     <div class="mobile-text d-flex d-lg-none" *ngIf="!animationStarted">
         <p class="canela-r" *ngIf="languageObject">{{ languageObject.homepage.section2["cursor-mobile-next-slide-text"]}}</p>
     </div>
-    <video muted="muted" class="video2" id="video1" #video1>
+    <video class="video2" id="video1" #video1 autoplay loop muted playsinline>
         <source src="/assets/homepage/cyan0000.mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -74,7 +58,7 @@
                                 {{ mobileHelpText }}
                             </span>
                         </div>
-                        <div class="life-essentials">
+                        <!-- <div class="life-essentials">
                             <ul class="life-essentials-list" *ngIf="actualContent['life-essentials']">
                                 <li *ngFor="let l of actualContent['life-essentials']">
                                     <div class="content">
@@ -83,7 +67,7 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -94,7 +78,13 @@
     <div class="row">
         <div class="col-lg d-flex flex-column align-items-center fade-in">
             <h1>{{ languageObject.homepage.section3["title"] }}</h1>
-            <a href="" class="lq-btn text-center" style="padding: 20px 15px 20px 15px;">{{languageObject.homepage.section3["cta-text"]}}</a>
+            <!-- <a href="" class="lq-btn text-center" style="padding: 20px 15px 20px 15px;">{{languageObject.homepage.section3["cta-text"]}}</a> -->
+            <button data-tf-popup="I3yIogT3" 
+                    data-tf-iframe-props="title=LQ Wheel of Life" 
+                    data-tf-medium="snippet" 
+                    class="lq-btn text-center"
+                    style="padding: 20px 15px 20px 15px;">
+                    {{languageObject.homepage.section3["cta-text"]}}</button>
             <!-- <iframe class="typeform-widget" src="https://form.typeform.com/to/EUPEmQfo?typeform-medium=embed-snippet" style="width:800px; height: 500px;"></iframe>  -->
             <p style="max-width: 550px;text-align: center;">{{languageObject.homepage.section3["paragraph"]}}</p>
         </div>

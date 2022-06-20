@@ -2,6 +2,7 @@ import { AfterContentInit, AfterViewInit, Component, ElementRef, OnInit, ViewChi
 import { Power4, TimelineMax, TweenLite, gsap, Power0  } from 'gsap';
 import * as $ from "jquery";
 import { LanguageService } from 'src/app/services/language.service';
+import { TypeformService } from 'src/app/services/typeform.service';
 import { VideoService } from 'src/app/services/video.service';
 
 declare var VanillaTilt:any;
@@ -32,11 +33,13 @@ export class HomepageComponent implements OnInit, AfterViewInit {
    */
   constructor( 
     private videoService: VideoService,
-    private _languageService: LanguageService
+    private _languageService: LanguageService,
+    private _typeformService: TypeformService
   ) {}
 
   ngOnInit(): void {
     this.getLanguage();
+    this._typeformService.loadScript();
   }
 
   ngAfterViewInit(){
@@ -72,7 +75,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
    */
   actualContent:any;
   sliderContent:any;
-  sliderSeconds = [2,5,10];
+  sliderSeconds = [6,12,16];
   actualIndex = 0;
   totalSlides:number;
   isInLastSlide:boolean = false;

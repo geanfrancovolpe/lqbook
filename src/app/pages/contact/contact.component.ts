@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TypeformService } from 'src/app/services/typeform.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _typeformService: TypeformService
+  ) { }
 
   ngOnInit(): void {
+    this._typeformService.loadScript();
+  }
+
+  showTypeForm(){
   }
 
 }

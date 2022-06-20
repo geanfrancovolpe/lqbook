@@ -18,10 +18,9 @@
 
     .main-background {
         filter: blur(4px);
-        img {
-            width: 150%;
-            height: 150%;
-        }
+        background-image: url(/assets/homepage/main-video.gif);
+        background-size: cover;
+        background-position: center center;
     }
     
 
