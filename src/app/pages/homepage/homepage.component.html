@@ -58,16 +58,12 @@
                                 {{ mobileHelpText }}
                             </span>
                         </div>
-                        <!-- <div class="life-essentials">
-                            <ul class="life-essentials-list" *ngIf="actualContent['life-essentials']">
-                                <li *ngFor="let l of actualContent['life-essentials']">
-                                    <div class="content">
-                                        <span>{{ l.title }}</span>
-                                        <span>{{ l.value }}%</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div> -->
+                        <div class="life-essentials">
+                            <div class="life-essential" *ngFor="let l of actualContent['life-essentials']" [ngClass]="l.position">
+                                <span>{{ l.title }}</span>
+                                <span class="essential-percentage">{{ l.value }}%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

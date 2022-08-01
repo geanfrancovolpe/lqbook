@@ -172,6 +172,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
     videoPromise.then( successMessage => {
       if(successMessage != 'reverseVideo'){
         this.actualContent = this.sliderContent[this.actualIndex];
+        console.log("Life essentials", this.actualContent["life-essentials"]);
         this.fadeInCaption();
         this.setBallText(this.actualIndex + 1, this.totalSlides);
         this.toggleBallLoader();

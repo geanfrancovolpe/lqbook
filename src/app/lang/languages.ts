@@ -24,13 +24,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"If you've been struggling to balance two life areas, you may be surprised to know that masterfully juggling 12 life areas can be more fulfilling and easier.", 
                         "paragraph2":"his sounds counterintuitive, and yet it is true. How can that be? Let's see.",
                         "life-essentials": [
-                            {"title": "Family", "value": 24.8 },
-                            {"title": "Work", "value": 89.9 },
-                            {"title": "Physical", "value": 12.1},
-                            {"title": "Spiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emotional", "value": 7.3 },
-                            {"title": "Relaxation", "value": 2.3 }
+                            {"title": "Mind", "value": 24.8, "position": "essential-top-left" },
+                            {"title": "Body", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Career", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Friends", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     },
                     {
@@ -38,13 +35,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"When we think about life balance, we think about work and family life; but you may have been ignoring your physical, spiritual, mental, emotional, and relaxation needs. Once you begin working on those forgotten areas, the ones you usually obsess over will improve almost by themselves.", 
                         "paragraph2":"Think of your life like a wheel; the more balanced it is, the better it will roll.",
                         "life-essentials": [
-                            {"title": "Family", "value": 22.8 },
-                            {"title": "Work", "value": 89.9 },
-                            {"title": "Physical", "value": 12.1},
-                            {"title": "Spiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emotional", "value": 7.3 },
-                            {"title": "Relaxation", "value": 2.3 }
+                            {"title": "Mind", "value": 22.8, "position": "essential-top-left" },
+                            {"title": "Body", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Career", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Friends", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     },
                     {
@@ -52,13 +46,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Become aware of your current reality. Confirm your purpose and values. Calculate your LifeQ score to show you where you are and the necessary steps to take you where you want to be.", 
                         "paragraph2":"Develop a winning strategy. Set SMART goals, make promises and identify your personal Board of Directors. Learn to take action and how to get back on-track when you are off-course.",
                         "life-essentials": [
-                            {"title": "Family", "value": 28.8 },
-                            {"title": "Work", "value": 89.9 },
-                            {"title": "Physical", "value": 12.1},
-                            {"title": "Spiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emotional", "value": 7.3 },
-                            {"title": "Relaxation", "value": 2.3 }
+                            {"title": "Mind", "value": 28.8, "position": "essential-top-left" },
+                            {"title": "Body", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Career", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Friends", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     }
                 ],
@@ -207,13 +198,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Si ha estado luchando por equilibrar dos áreas de la vida, se sorprenderá al saber que hacer malabares con 12 áreas de la vida de manera magistral puede ser más satisfactorio y más fácil.", 
                         "paragraph2":"Esto suena contradictorio y, sin embargo, es cierto. ¿Como puede ser? Veamos.",
                         "life-essentials": [
-                            {"title": "Familia", "value": 24.8 },
-                            {"title": "Trabajo", "value": 89.9 },
-                            {"title": "Fisica", "value": 12.1},
-                            {"title": "Espiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emocional", "value": 7.3 },
-                            {"title": "Relajación", "value": 2.3 }
+                            {"title": "Mente", "value": 24.8, "position": "essential-top-left" },
+                            {"title": "Física", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Carrera", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Familia", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     },
                     {
@@ -221,13 +209,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Cuando pensamos en el equilibrio de la vida, pensamos en el trabajo y la vida familiar; pero es posible que haya estado ignorando sus necesidades físicas, espirituales, mentales, emocionales y de relajación. Una vez que empieces a trabajar en esas áreas olvidadas, las que normalmente te obsesionan mejorarán casi por sí solas.", 
                         "paragraph2":"Piensa en tu vida como una rueda; cuanto más equilibrado esté, mejor rodará.",
                         "life-essentials": [
-                            {"title": "Familia", "value": 30.8 },
-                            {"title": "Trabajo", "value": 89.9 },
-                            {"title": "Fisica", "value": 12.1},
-                            {"title": "Espiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emocional", "value": 7.3 },
-                            {"title": "Relajación", "value": 2.3 }
+                            {"title": "Mente", "value": 30.8, "position": "essential-top-left" },
+                            {"title": "Física", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Carrera", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Familia", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     },
                     {
@@ -235,13 +220,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Toma conciencia de tu realidad actual. Confirme su propósito y valores. Calcule su puntaje LifeQ para mostrarle dónde se encuentra y los pasos necesarios para llevarlo a donde quiere estar", 
                         "paragraph2":"Desarrollar una estrategia ganadora. Establezca metas SMART, haga promesas e identifique su Junta Directiva personal. Aprenda a tomar medidas y cómo volver a encarrilarse cuando se haya desviado.",
                         "life-essentials": [
-                            {"title": "Familia", "value": 30.8 },
-                            {"title": "Trabajo", "value": 89.9 },
-                            {"title": "Fisica", "value": 12.1},
-                            {"title": "Espiritual", "value": 19.2 },
-                            {"title": "Mental", "value": 74 },
-                            {"title": "Emocional", "value": 7.3 },
-                            {"title": "Relajación", "value": 2.3 }
+                            {"title": "Mente", "value": 30.8, "position": "essential-top-left" },
+                            {"title": "Física", "value": 89.9, "position": "essential-top-right" },
+                            {"title": "Carrera", "value": 12.1, "position": "essential-bottom-left"},
+                            {"title": "Familia", "value": 19.2, "position": "essential-bottom-right" },
                         ]
                     }
                 ],

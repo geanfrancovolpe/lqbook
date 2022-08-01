@@ -53,7 +53,8 @@
     background-color: #e6e1e0;
     position: relative;
     overflow: hidden;
-    min-height: 80vh;
+    min-height: 700px;
+    height: 700px;
 
     .slide-caption {
         display: none;
@@ -61,25 +62,147 @@
 
         &.active {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
 
-        ul {
-            margin:0;
-            padding:0;
-            list-style-type: none;
-            max-width: 400px;
+        .lq-parraph{
+            width: 100%;
+            top:0;
+            position: relative;
+            min-height: 500px;
+    
+            h4 {
+                padding:50px 0;
+                font-size:16pt;
+            }
+        
+            p {
+                color:#606060;
+                max-width: 400px;
+            }
+        }
 
-            li {
-                margin:2px 0;
-                padding:0;
 
-                .content {
-                    display: flex;
-                    justify-content: space-between;
+        .life-essentials {
+            width: 50%;
+            position: absolute;
+            left: -8%;
+            height: 82%;
+            width: 600px;
+            right: -33%;
+            top: -3%;
+            margin: auto;
+
+            .life-essential {
+                width: 110px;
+                border-radius: 30px;
+                background-color: white;
+                margin: 5px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                
+                
+                span {
+                    padding: 2px 5px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    text-transform: capitalize;
+
+
+                    &.essential-percentage {
+                        background-color: #707070;
+                        color:white;
+                        border-top-right-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                    }
+                }
+
+    
+                &.essential-top-left {
+                    left:-100px;
+                    top: 0;
+
+                    &::after{
+                        content: "";
+                        background-image: url(/assets/homepage/essential-top-left.svg);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        right: -170px;
+                        bottom: -80px;
+                        margin: auto;
+                        width: 170px;
+                        height: 100px;
+                    }
+                }
+
+                &.essential-top-right {
+                    right:0;
+                    top:50px;
+
+                    &::after{
+                        content: "";
+                        background-image: url(/assets/homepage/essential-top-left.svg);
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        left: -170px;
+                        bottom: -80px;
+                        margin: auto;
+                        width: 170px;
+                        height: 100px;
+                    }
+                }
+
+                &.essential-bottom-left {
+                    left: -80px;
+                    bottom: 35px;
+
+
+                    &::after{
+                        content: "";
+                        background-image: url(/assets/homepage/essential-top-left.svg);
+                        -webkit-transform: scaleY(-1);
+                        transform: scaleY(-1);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        right: -170px;
+                        top: -80px;
+                        margin: auto;
+                        width: 170px;
+                        height: 100px;
+                    }
+                    
+                }
+
+                &.essential-bottom-right {
+                    right:0;
+                    bottom:50px;
+
+                    &::after{
+                        content: "";
+                        background-image: url(/assets/homepage/essential-top-left.svg);
+                        -webkit-transform: scaleY(-1) scaleX(-1);
+                        transform: scaleY(-1) scaleX(-1);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        left: -170px;
+                        top: -80px;
+                        margin: auto;
+                        width: 170px;
+                        height: 100px;
+                    }
                 }
             }
         }
+
     }
 
     .video2{    
@@ -88,23 +211,8 @@
         right:0;
         z-index: 0;
         min-width: 100%;
-        min-height: 80vh;
-    }
-
-    .lq-parraph{
-        top:0;
-        position: relative;
-        min-height: 500px;
-
-        h4 {
-            padding:50px 0;
-            font-size:16pt;
-        }
-    
-        p {
-            color:#606060;
-            max-width: 400px;
-        }
+        min-height: 700px;
+        height: 700px;
     }
 
     .spinner-grow {
@@ -247,6 +355,83 @@
     z-index: 3;
 }
 
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Life essentials positioning 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media (min-width:1730px) {
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -60%!important;
+    }
+}
+
+@media (min-width:1630px) and (max-width:1729px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -50%!important;
+    }
+}
+
+@media (min-width:1520px) and (max-width:1629px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -40%!important;
+    }
+}
+
+@media (min-width:1420px) and (max-width:1519px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -35%!important;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1419px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -22%!important;
+    }
+}
+
+@media (max-width:1199px){
+    .lq-video-2 .slide-caption.active {
+        flex-direction: column;
+
+        .lq-parraph {
+            width: 100%;
+        }
+
+        .life-essentials {
+            width: 100%;
+            position: relative;
+            left: 0;
+            height: auto;
+            right: auto;
+            top: 0;
+            margin: 0;
+
+            .life-essential {
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative; 
+                top:auto!important;
+                left:auto!important;
+                right:auto!important;
+                bottom:auto!important;
+                margin: 5px 0;
+
+                &:after {
+                    display: none!important;
+                }
+            }
+        }
+    }
+}
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Media queries
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 @media (max-width:992px){
     .lq-content-five {
         padding:50px 5%;
@@ -274,7 +459,7 @@
     }
 }
 
-@media (max-width:400px){
+@media (max-width:600px){
     .lq-video-2 {
         .video2 {
             right:-90%;
@@ -282,6 +467,8 @@
         } 
 
         .lq-parraph {
+            min-height: 420px!important;
+
             h4 {
                 padding: 10px 0;
             }
