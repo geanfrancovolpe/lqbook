@@ -1,15 +1,15 @@
 <div class="container my-5">
     <div class="row">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <h1>
-                Use the following questionnaire to reach out to me about my coaching and facilitation services
+            <h1 *ngIf="languageObject">
+                {{ languageObject.contact.title }}
             </h1>
             <button data-tf-popup="I3yIogT3" 
                 data-tf-iframe-props="title=LQ Wheel of Life" 
                 data-tf-medium="snippet" 
                 class="lq-btn text-center"
                 style="padding: 20px 15px 20px 15px;">
-                Contact Jasenka
+                {{ languageObject.contact["cta-title"] }}
             </button>
         </div>
     </div>

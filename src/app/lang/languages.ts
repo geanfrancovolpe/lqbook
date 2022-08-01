@@ -15,7 +15,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
                 "paragraph": "Businesses create strategic plans so they can be successful. Our LifeQ Book uses the same process to help you create a business plan for your life to achieve success personally and professionally"
             },
             "section2": {
-                "cursor-title": "Click to play de experience",
+                "cursor-title": "Click to play the experience",
                 "cursor-next-slide-text": "Go to next slide",
                 "cursor-mobile-next-slide-text": "Tap to next slide",
                 "slider-content": [
@@ -46,10 +46,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Become aware of your current reality. Confirm your purpose and values. Calculate your LifeQ score to show you where you are and the necessary steps to take you where you want to be.", 
                         "paragraph2":"Develop a winning strategy. Set SMART goals, make promises and identify your personal Board of Directors. Learn to take action and how to get back on-track when you are off-course.",
                         "life-essentials": [
-                            {"title": "Mind", "value": 98.8, "position": "essential-top-left" },
-                            {"title": "Body", "value": 96.9, "position": "essential-top-right" },
-                            {"title": "Career", "value": 94.1, "position": "essential-bottom-left"},
-                            {"title": "Friends", "value": 99.2, "position": "essential-bottom-right" },
+                            {"title": "Mind", "value": 100, "position": "essential-top-left" },
+                            {"title": "Body", "value": 100, "position": "essential-top-right" },
+                            {"title": "Career", "value": 100, "position": "essential-bottom-left"},
+                            {"title": "Friends", "value": 100, "position": "essential-bottom-right" },
                         ]
                     }
                 ],
@@ -96,7 +96,8 @@ export const LANGUAGES: { [ char: string ]: object } = {
                 Transform to a healthier, wealthier, purposeful and more joyful life whether that means Succeeding in your career, improving your relationships or realizing your real self.`
         },
         "contact": {
-    
+            "title": "Use the following questionnaire to reach out to me about my coaching and facilitation services",
+            "cta-title": "Contact Jasenka" 
         },
         "book": {
             "title": "LifeQ",
@@ -220,10 +221,10 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         "paragraph1":"Toma conciencia de tu realidad actual. Confirme su propósito y valores. Calcule su puntaje LifeQ para mostrarle dónde se encuentra y los pasos necesarios para llevarlo a donde quiere estar", 
                         "paragraph2":"Desarrollar una estrategia ganadora. Establezca metas SMART, haga promesas e identifique su Junta Directiva personal. Aprenda a tomar medidas y cómo volver a encarrilarse cuando se haya desviado.",
                         "life-essentials": [
-                            {"title": "Mente", "value": 98.8, "position": "essential-top-left" },
-                            {"title": "Física", "value": 96.9, "position": "essential-top-right" },
-                            {"title": "Carrera", "value": 94.1, "position": "essential-bottom-left"},
-                            {"title": "Familia", "value": 99.2, "position": "essential-bottom-right" },
+                            {"title": "Mente", "value": 100, "position": "essential-top-left" },
+                            {"title": "Física", "value": 100, "position": "essential-top-right" },
+                            {"title": "Carrera", "value": 100, "position": "essential-bottom-left"},
+                            {"title": "Familia", "value": 100, "position": "essential-bottom-right" },
                         ]
                     }
                 ],
@@ -270,7 +271,8 @@ export const LANGUAGES: { [ char: string ]: object } = {
             Transfórmese hacia una vida más saludable, más rica, con un propósito y más alegre, ya sea que eso signifique tener éxito en su carrera, mejorar sus relaciones o darse cuenta de su verdadero yo.`
         },
         "contact": {
-    
+            "title": "Rellena el siguiente formulario para informarte sobre mis servicios de coaching y facilitación",
+            "cta-title": "Contactar" 
         },
         "book": {
             "title": "LifeQ",
