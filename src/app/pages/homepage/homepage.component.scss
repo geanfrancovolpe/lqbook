@@ -50,11 +50,12 @@
 }
 
 .lq-video-2 {
-    background-color: #e6e1e0;
     position: relative;
     overflow: hidden;
     min-height: 700px;
     height: 700px;
+    background: rgb(235,239,225);
+    background: linear-gradient(90deg, #eff3e4 0%, #cfe6f5 100%);
 
     .slide-caption {
         display: none;
@@ -361,33 +362,45 @@ Life essentials positioning
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
-@media (min-width:1730px) {
+@media (min-width:2000px){
     .lq-video-2 .slide-caption .life-essentials {
-        right: -60%!important;
+        right: -90%!important;
+    }
+}
+
+@media (min-width:1900px) and (max-width:1999px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -80%!important;
+    }
+}
+
+@media (min-width:1730px) and (max-width:1899px){
+    .lq-video-2 .slide-caption .life-essentials {
+        right: -70%!important;
     }
 }
 
 @media (min-width:1630px) and (max-width:1729px){
     .lq-video-2 .slide-caption .life-essentials {
-        right: -50%!important;
+        right: -60%!important;
     }
 }
 
 @media (min-width:1520px) and (max-width:1629px){
     .lq-video-2 .slide-caption .life-essentials {
-        right: -40%!important;
+        right: -50%!important;
     }
 }
 
 @media (min-width:1420px) and (max-width:1519px){
     .lq-video-2 .slide-caption .life-essentials {
-        right: -35%!important;
+        right: -40%!important;
     }
 }
 
 @media (min-width:1200px) and (max-width:1419px){
     .lq-video-2 .slide-caption .life-essentials {
-        right: -22%!important;
+        right: -30%!important;
     }
 }
 

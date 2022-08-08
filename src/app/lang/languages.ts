@@ -12,7 +12,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
         "homepage": {
             "section1": {
                 "title":"Make your life your most important business",
-                "paragraph": "Businesses create strategic plans so they can be successful. Our LifeQ Book uses the same process to help you create a business plan for your life to achieve success personally and professionally"
+                "paragraph": "Businesses create strategic plans so they can be successful. Our LifeQ Book uses the same process to help you create a plan for your life to achieve success personally and professionally"
             },
             "section2": {
                 "cursor-title": "Click to play the experience",
@@ -22,7 +22,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
                     {
                         "title":"More is less", 
                         "paragraph1":"If you've been struggling to balance two life areas, you may be surprised to know that masterfully juggling 12 life areas can be more fulfilling and easier.", 
-                        "paragraph2":"his sounds counterintuitive, and yet it is true. How can that be? Let's see.",
+                        "paragraph2":"This sounds counterintuitive, and yet it is true. How can that be?",
                         "life-essentials": [
                             {"title": "Mind", "value": 28.8, "position": "essential-top-left" },
                             {"title": "Body", "value": 32.9, "position": "essential-top-right" },
@@ -60,7 +60,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
                 "cta-text": "Fill the form"
             },
             "section4" : {
-                "title": "Consider this book a DIY toolkit for living your life based on your values and purpose.",
+                "title": "Consider this book a Do It Yourself toolkit for living your life based on your values and purpose.",
                 "paragraph": "We wrote a book to share case studies from our clients, offer research and expert advice, provide practical exercises, and give examples of how we apply these business principles in our lives.",
                 "amazon-text": "Available in Amazon",
                 "cta-text": "Shop now"
@@ -105,13 +105,21 @@ export const LANGUAGES: { [ char: string ]: object } = {
             "translated-author": "Author",
             "lang-button-text": "English",
             "pages-text": "Pages",
-            "first-description-title": "LifeQ is for you if you want to achieve breakthrough, long-term results in your personal and professional life.",
+            "first-description-title": "Who can benefit from LifeQ?",
             "second-description-title": "What is special about LifeQ?",
-            "first-description-paragraph": "It could be that you want to examine your career path, or overhaul your financial plan, or find a new love, or create better relationships, or create a retirement strategy, or get get healthier, or develop a new talent or skill.",
+            "first-description-paragraph": `LifeQ is for you if you want to achieve break-through, long-term results in your personal and professional life. It could be that you want to… 
+
+                - Examine your career path.
+                - Overhaul your financial plan.
+                - Find a new love.
+                - Create better relationships.
+                - Create a retirement strategy.
+                - Get healthier or develop a new talent or skill.
+            `,
             "second-description-paragraph": "LifeQ is a system that measures the quality of your life based on what you think is important. It is like a GPS system that shows you where you are and then how to get where you want to be. It is based on your values, your purpose and how you see your destiny.",
             "first-cta-text": "Buy e-book now",
-            "second-cta-text": "Buy hardcover on amazon",
-            "comments-title": "Comments",
+            "second-cta-text": "Buy hardcover in amazon",
+            "comments-title": "Testimonials",
             "comments": [
                 { 
                     "name": "Lena Sosa",
@@ -187,7 +195,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
         "homepage": {
             "section1": {
                 "title":"Haz de tu vida tu negocio más importante",
-                "paragraph": "Las empresas crean planes estratégicos para que puedan tener éxito. Nuestro libro LifeQ utiliza el mismo proceso para ayudarlo a crear un plan de negocios para su vida para lograr el éxito personal y profesional."
+                "paragraph": "Las empresas crean planes estratégicos para que puedan tener éxito. Nuestro libro LifeQ utiliza el mismo proceso para ayudarlo a crear un plan de vida para lograr el éxito personal y profesional."
             },
             "section2": {
                 "cursor-title": "Click para comenzar la experiencia",
@@ -197,7 +205,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
                     {
                         "title":"Más es menos", 
                         "paragraph1":"Si ha estado luchando por equilibrar dos áreas de la vida, se sorprenderá al saber que hacer malabares con 12 áreas de la vida de manera magistral puede ser más satisfactorio y más fácil.", 
-                        "paragraph2":"Esto suena contradictorio y, sin embargo, es cierto. ¿Como puede ser? Veamos.",
+                        "paragraph2":"Esto suena contradictorio y, sin embargo, es cierto. ¿Como puede ser?",
                         "life-essentials": [
                             {"title": "Mente", "value": 28.8, "position": "essential-top-left" },
                             {"title": "Física", "value": 32.9, "position": "essential-top-right" },
@@ -286,7 +294,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
             "second-description-paragraph": "LifeQ es un sistema que mide la calidad de tu vida en función de lo que crees que es importante. Es como un sistema de GPS que te muestra dónde estás y luego cómo llegar a donde quieres estar. Se basa en tus valores, tu propósito y cómo ves tu destino.",
             "first-cta-text": "Comprar LifeQ",
             "second-cta-text": "Obtén el libro en físico",
-            "comments-title": "Comentarios",
+            "comments-title": "Testimonios",
             "comments": [
                 { 
                     "name": "Lena Sosa",

@@ -1,14 +1,13 @@
-.lq-navbar {
+.lq-navbar, .navbar {
     // background-color: #e6e1e0;
     z-index:1;
-    position: fixed;
+    position: absolute!important;
     top:0;
     width: 100%;
     
     ul {
         margin:0;
         padding:5px 35px;
-        // width:100%;
         display: inline-block;
         list-style-type: none;
 
@@ -18,9 +17,9 @@
             cursor:pointer;
             opacity:1;
             transition:all .6s ease;
-            font-size: 10pt;
+            font-size: 12pt;
             letter-spacing: .5px;
-            margin:0 20px;
+            margin:0 10px;
 
             a {
               color:#333;
@@ -151,14 +150,22 @@
 }
 
 @media (max-width:992px){
+
+  .navbar {
+    position: fixed!important;
+  }
+  
   .navbar ul {
     padding:0;
     width: 100%;
+    overflow-x: hidden;
 
     li {
       display: block;
       width: 100%;
       text-align: right;
+      position: relative;
+      right:25px;
 
       a {
         display: inline-block;
