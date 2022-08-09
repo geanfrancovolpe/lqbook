@@ -42,9 +42,9 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         ]
                     },
                     {
-                        "title":"What we should be doing", 
-                        "paragraph1":"Become aware of your current reality. Confirm your purpose and values. Calculate your LifeQ score to show you where you are and the necessary steps to take you where you want to be.", 
-                        "paragraph2":"Develop a winning strategy. Set SMART goals, make promises and identify your personal Board of Directors. Learn to take action and how to get back on-track when you are off-course.",
+                        "title":"Become aware of your current reality", 
+                        "paragraph1":"Uncover your purpose and values.", 
+                        "paragraph2":"Calculate your LifeQ score to show you where you are and steps to take you where you want to be, and eliminate obstacles that are blocking you. Develop a winning strategy, set SMART goals, make promises and identify your personal Board of Directors.",
                         "life-essentials": [
                             {"title": "Mind", "value": 100, "position": "essential-top-left" },
                             {"title": "Body", "value": 100, "position": "essential-top-right" },
@@ -62,7 +62,7 @@ export const LANGUAGES: { [ char: string ]: object } = {
             "section4" : {
                 "title": "Consider this book a Do It Yourself toolkit for living your life based on your values and purpose.",
                 "paragraph": "We wrote a book to share case studies from our clients, offer research and expert advice, provide practical exercises, and give examples of how we apply these business principles in our lives.",
-                "amazon-text": "Available in Amazon",
+                "amazon-text": "Available on Amazon",
                 "cta-text": "Shop now"
             },
             "section5": {
@@ -225,9 +225,9 @@ export const LANGUAGES: { [ char: string ]: object } = {
                         ]
                     },
                     {
-                        "title":"Lo que deberíamos hacer", 
-                        "paragraph1":"Toma conciencia de tu realidad actual. Confirme su propósito y valores. Calcule su puntaje LifeQ para mostrarle dónde se encuentra y los pasos necesarios para llevarlo a donde quiere estar", 
-                        "paragraph2":"Desarrollar una estrategia ganadora. Establezca metas SMART, haga promesas e identifique su Junta Directiva personal. Aprenda a tomar medidas y cómo volver a encarrilarse cuando se haya desviado.",
+                        "title":"Toma conciencia de tu realidad actual", 
+                        "paragraph1":"Descubre tu propósito y valores.", 
+                        "paragraph2":"Calcule su puntaje LifeQ para mostrarle dónde se encuentra y los pasos para llevarlo a donde quiere estar y eliminar los obstáculos que lo bloquean. Desarrolle una estrategia ganadora, establezca metas SMART, haga promesas e identifique su Junta Directiva personal.",
                         "life-essentials": [
                             {"title": "Mente", "value": 100, "position": "essential-top-left" },
                             {"title": "Física", "value": 100, "position": "essential-top-right" },
